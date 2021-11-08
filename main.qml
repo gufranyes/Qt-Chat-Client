@@ -34,10 +34,7 @@ Window {
             Button{
                 id: buttonConnect
                 text: qsTr("Connect")
-                onClicked: {
-
-
-                }
+                onClicked: client.connectToHost(textFieldIp.text, textFieldPort.text)
             }
         }
         ListView{               //List messages
